@@ -135,7 +135,6 @@ main {
 /*
  * headline
  */
-
 .headline__figure {
   width: 100%;
 }
@@ -165,6 +164,7 @@ main {
 .headline__description {
   font-size: 16px;
   margin-top: 12px;
+  line-height: 25px;
 }
 
 .headline__button {
