@@ -1,8 +1,34 @@
+@media screen and (max-width: 650px){
+    .nav{
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        transform: translate(-250px, 0);
+        transition: transform 0.3s ease-in-out;
+        background-color:#111;
+    }
+
+    .nav.open {
+        transform: translate(0,0)
+    }
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+        font-weight: 600px;
+    }
+}
+
 @media screen and (min-width: 650px){
     .posts{
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
+    }
+
+    .hamburger_nav{
+        display:none;
     }
 }
 

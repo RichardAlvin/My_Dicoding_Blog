@@ -16,8 +16,10 @@
     <h1 class="header__title">
       Dicoding's Blog
     </h1>
+    <a id="hamburger" class="hamburger_nav">☰</a>
   </div>
 </header>
+
 <nav id="drawer" class="nav">
   <ul class="nav__list">
     <li class="nav__item"><a href="#">Articles</a></li>
@@ -167,4 +169,21 @@
   </ul>
 </footer>
 </body>
+
+<script>
+  const hamburgerButtonElement = document.querySelector('#hamburger');
+  const drawerElement = document.querySelector('#drawer');
+  
+  hamburgerButtonElement.addEventListener('click', event => {
+    drawerElement.classList.toggle('open');
+    event.stopPropagation();
+  });
+
+  const mainElement = document.querySelector('body');
+
+  mainElement.addEventListener('click', event => {
+    drawerElement.classList.remove('open');
+    event.stopPropagation();
+  });
+</script>
 </html>
